@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Contact.css';
 
 function Status (props) {
@@ -23,9 +24,12 @@ function Contact (props) {
         </div>
       </div>
     </div>
-    
-
   );
 }
+
+Contact.propTypes = {
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+};
 
 export default Contact;
